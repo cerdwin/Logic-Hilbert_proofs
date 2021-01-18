@@ -14,7 +14,7 @@ j -> (y -> j) (C1)
 (~y -> ~j) -> (j -> y) (C3)
 
 
-Formulas to prove~
+Formulas to prove:
 
 
 (Ia) (j -> y) -> ((y -> c) -> (j -> c)),
@@ -47,7 +47,7 @@ j -> (y -> j) (I1)
 j -> (~j -> y) (I4)
 
 
-Formulas to prove~
+Formulas to prove:
 
 (IIa) (j -> y) -> ((y -> c) -> (j -> c)),
 
