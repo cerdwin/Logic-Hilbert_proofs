@@ -5,16 +5,28 @@ HC*
 
 
 j ! (y ! j) (C1)
+
+
 (j ! (y ! c)) ! ((j ! y) ! (j ! c)) (C2)
+
+
 (:y ! :j) ! (j ! y) (C3)
+
 
 HI
 
 
 j ! (y ! j) (I1)
+
+
 (j ! (y ! c)) ! ((j ! y) ! (j ! c)) (I2)
+
+
 (j ! y) ! ((j ! :y) ! :j) (I3)
+
+
 j ! (:j ! y) (I4)
+
 
 Each of the models is furter extended by modus ponens, i.e. 
 If j is provable and j ! y is provable, then also y is provable. (MP)
