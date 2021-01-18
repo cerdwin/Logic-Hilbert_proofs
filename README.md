@@ -1,8 +1,21 @@
-I have split three parts of the homework into three respective directories. For each scheme, I included either
-a proof from the system-on TPTP in a .txt file, or a respective model generated via Paradox also in a .txt file. I haven't included proofs from my desktop just because I ran into some issues with Paradox. I would be happy, however, to send through results from my PC, if there was an issue.
+As part of a task, I have implemented proofs of some formulae in propositional Hilbert-style proof systems using first-order theorem provers (E prover and Paradox). I encoded a propositional proof system and used either E prover or Paradox to produce a proof or a model showing the formula is either provable or not. 
+The two systems are a classical propositional logic system (HC) and an intuitionistic system (HI).
 
-In general, In the first part I found all proofs for all sections apart from the last one and in the second part, I found proofs only for the first and third ones. All the other ones have their models generated via Paradox included.
+HC*
+j ! (y ! j) (C1)
+(j ! (y ! c)) ! ((j ! y) ! (j ! c)) (C2)
+(:y ! :j) ! (j ! y) (C3)
 
-Subsequently, In the third section I transformed axioms from each of the first two parts into conjectures and in case they weren't the same as axioms in the second model, I tested if I could see a proof of their existence. I came to the conclusion that whilst HI system could in its entirety exist in HC system, the reverse doesn't apply. 
+HI
+j ! (y ! j) (I1)
+(j ! (y ! c)) ! ((j ! y) ! (j ! c)) (I2)
+(j ! y) ! ((j ! :y) ! :j) (I3)
+j ! (:j ! y) (I4)
 
-I have also enclosed a word document named homework3.doc, which includes all code used together.
+Each of the models is furter extended by modus ponens, i.e. 
+If j is provable and j ! y is provable, then also y is provable. (MP)
+
+
+*the only allowed connectives are ! - implications and :-negations.
+
+
