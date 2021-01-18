@@ -1,7 +1,7 @@
 As part of a task, I have implemented proofs of some formulae in propositional Hilbert-style proof systems using first-order theorem provers (E prover and Paradox). I encoded a propositional proof system and used either E prover or Paradox to produce a proof or a model showing the formula is either provable or not. 
 The two systems are a classical propositional logic system (HC) and an intuitionistic system (HI).
-
-HC*
+The only allowed connectives are -> - implications and ~-negations.
+HC
 
 
 j -> (y -> j) (C1)
@@ -66,7 +66,7 @@ Formulas to prove~
 Each of the models is furter extended by modus ponens, i.e. 
 If j is provable and j -> y is provable, then also y is provable. (MP)
 
+Lastly I compared each of the models with respect to the other one to see if either is provable in the
 
-*the only allowed connectives are -> - implications and ~-negations.
 
 
