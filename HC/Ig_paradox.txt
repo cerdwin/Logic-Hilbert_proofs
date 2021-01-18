@@ -1,0 +1,49 @@
+% START OF SYSTEM OUTPUT
+Paradox, version 4.0, 2010-06-29.
++++ PROBLEM: /tmp/SystemOnTPTP129312/SOT_4NIGHX.tptp:short
+Reading '/tmp/SystemOnTPTP129312/SOT_4NIGHX.tptp:short' ... OK
++++ SOLVING: /tmp/SystemOnTPTP129312/SOT_4NIGHX.tptp:short
++++ BEGIN MODEL
+SZS output start FiniteModel for /tmp/SystemOnTPTP129312/SOT_4NIGHX.tptp:short
+% domain size is 2
+fof(domain, fi_domain,
+  (![X] : (X = "1" | X = "2"))
+).
+
+fof(i, fi_functors,
+  ( (i("1","1") = "2")
+  & (i("1","2") = "2")
+  & (i("2","1") = "1")
+  & (i("2","2") = "2")
+  )
+).
+
+fof(n, fi_functors,
+  ( (n("1") = "2")
+  & (n("2") = "1")
+  )
+).
+
+fof(pr, fi_predicates,
+  ( (pr("1") <=> $false)
+  & (pr("2") <=> $true)
+  )
+).
+
+fof(sK10_ig_A, fi_functors,
+  ( (sK10_ig_A = "1")
+  )
+).
+
+fof(sK9_ig_B, fi_functors,
+  ( (sK9_ig_B = "2")
+  )
+).
+SZS output end FiniteModel for /tmp/SystemOnTPTP129312/SOT_4NIGHX.tptp:short
++++ END MODEL
++++ RESULT: CounterSatisfiable
+SZS status CounterSatisfiable for /tmp/SystemOnTPTP129312/SOT_4NIGHX.tptp:short
+
+% END OF SYSTEM OUTPUT
+% RESULT: SOT_4NIGHX - Paradox---4.0 says CounterSatisfiable - CPU = 0.00 WC = 0.01  Size = 2
+% OUTPUT: SOT_4NIGHX - Paradox---4.0 says FiniteModel - CPU = 0.00 WC = 0.01 

@@ -1,0 +1,49 @@
+% START OF SYSTEM OUTPUT
+Paradox, version 4.0, 2010-06-29.
++++ PROBLEM: /tmp/SystemOnTPTP69326/SOT_OSeOMb.tptp:short
+Reading '/tmp/SystemOnTPTP69326/SOT_OSeOMb.tptp:short' ... OK
++++ SOLVING: /tmp/SystemOnTPTP69326/SOT_OSeOMb.tptp:short
++++ BEGIN MODEL
+SZS output start FiniteModel for /tmp/SystemOnTPTP69326/SOT_OSeOMb.tptp:short
+% domain size is 2
+fof(domain, fi_domain,
+  (![X] : (X = "1" | X = "2"))
+).
+
+fof(i, fi_functors,
+  ( (i("1","1") = "1")
+  & (i("1","2") = "2")
+  & (i("2","1") = "1")
+  & (i("2","2") = "1")
+  )
+).
+
+fof(n, fi_functors,
+  ( (n("1") = "2")
+  & (n("2") = "1")
+  )
+).
+
+fof(pr, fi_predicates,
+  ( (pr("1") <=> $true)
+  & (pr("2") <=> $false)
+  )
+).
+
+fof(sK11_twog_B, fi_functors,
+  ( (sK11_twog_B = "1")
+  )
+).
+
+fof(sK12_twog_A, fi_functors,
+  ( (sK12_twog_A = "2")
+  )
+).
+SZS output end FiniteModel for /tmp/SystemOnTPTP69326/SOT_OSeOMb.tptp:short
++++ END MODEL
++++ RESULT: CounterSatisfiable
+SZS status CounterSatisfiable for /tmp/SystemOnTPTP69326/SOT_OSeOMb.tptp:short
+
+% END OF SYSTEM OUTPUT
+% RESULT: SOT_OSeOMb - Paradox---4.0 says CounterSatisfiable - CPU = 0.00 WC = 0.01  Size = 2
+% OUTPUT: SOT_OSeOMb - Paradox---4.0 says FiniteModel - CPU = 0.00 WC = 0.01 

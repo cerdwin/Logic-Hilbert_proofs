@@ -1,0 +1,56 @@
+% START OF SYSTEM OUTPUT
+Paradox, version 4.0, 2010-06-29.
++++ PROBLEM: /tmp/SystemOnTPTP69146/SOT_4lWp1k.tptp:short
+Reading '/tmp/SystemOnTPTP69146/SOT_4lWp1k.tptp:short' ... OK
++++ SOLVING: /tmp/SystemOnTPTP69146/SOT_4lWp1k.tptp:short
++++ BEGIN MODEL
+SZS output start FiniteModel for /tmp/SystemOnTPTP69146/SOT_4lWp1k.tptp:short
+% domain size is 3
+fof(domain, fi_domain,
+  (![X] : (X = "1" | X = "2" | X = "3"))
+).
+
+fof(i, fi_functors,
+  ( (i("1","1") = "3")
+  & (i("1","2") = "3")
+  & (i("1","3") = "3")
+  & (i("2","1") = "1")
+  & (i("2","2") = "3")
+  & (i("2","3") = "3")
+  & (i("3","1") = "1")
+  & (i("3","2") = "2")
+  & (i("3","3") = "3")
+  )
+).
+
+fof(n, fi_functors,
+  ( (n("1") = "3")
+  & (n("2") = "1")
+  & (n("3") = "1")
+  )
+).
+
+fof(pr, fi_predicates,
+  ( (pr("1") <=> $false)
+  & (pr("2") <=> $false)
+  & (pr("3") <=> $true)
+  )
+).
+
+fof(sK11_twod_B, fi_functors,
+  ( (sK11_twod_B = "1")
+  )
+).
+
+fof(sK12_twod_A, fi_functors,
+  ( (sK12_twod_A = "2")
+  )
+).
+SZS output end FiniteModel for /tmp/SystemOnTPTP69146/SOT_4lWp1k.tptp:short
++++ END MODEL
++++ RESULT: CounterSatisfiable
+SZS status CounterSatisfiable for /tmp/SystemOnTPTP69146/SOT_4lWp1k.tptp:short
+
+% END OF SYSTEM OUTPUT
+% RESULT: SOT_4lWp1k - Paradox---4.0 says CounterSatisfiable - CPU = 0.00 WC = 0.02  Size = 3
+% OUTPUT: SOT_4lWp1k - Paradox---4.0 says FiniteModel - CPU = 0.00 WC = 0.02 
