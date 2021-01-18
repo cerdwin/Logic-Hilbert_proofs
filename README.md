@@ -1,6 +1,7 @@
 As part of a task, I have implemented proofs of some formulae in propositional Hilbert-style proof systems using first-order theorem provers (E prover and Paradox). I encoded a propositional proof system and used either E prover or Paradox to produce a proof or a model showing the formula is either provable or not. 
 The two systems are a classical propositional logic system (HC) and an intuitionistic system (HI).
 The only allowed connectives are -> - implications and ~-negations.
+
 HC
 
 
